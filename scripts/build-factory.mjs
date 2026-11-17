@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createRequire} from 'node:module';
+import * as esbuild from 'esbuild';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const require=createRequire(import.meta.url);
+await esbuild.build({absWorkingDir:root,entryPoints:[path.join(root,'src/isometric-factory.js')],outfile:path.join(root,'public/js/isometric-engine.mjs'),bundle:true,minify:true,format:'esm',target:'es2022',legalComments:'eof'});
+const threeRoot=path.dirname(path.dirname(require.resolve('three')));
+await fs.copyFile(path.join(threeRoot,'LICENSE'),path.join(root,'public/assets/THREE-LICENSE.txt'));
+console.log('Atelier isométrique complet : moteur compilé.');

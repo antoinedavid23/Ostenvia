@@ -1,0 +1,408 @@
+[
+  {
+    "path": "/",
+    "lang": "fr",
+    "key": "home",
+    "title": "Ostenvia · Automatisation IA et financements pour PME",
+    "noindex": false
+  },
+  {
+    "path": "/automatisation-ia/",
+    "lang": "fr",
+    "key": "automation",
+    "title": "Automatisation IA sur mesure pour TPE et PME · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/financements/",
+    "lang": "fr",
+    "key": "funding",
+    "title": "Financements pour TPE et PME : aides et dossiers · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Démonstrations d’automatisation IA · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/factures-fournisseurs/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Des factures prêtes à vérifier. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/planning-interventions/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Une intervention trouve son créneau. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/pre-devis-apres-appel/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "De l’appel au pré-devis. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/suivi-dossiers-echeances/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Les échéances sortent des dossiers. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/enrichissement-fiches-prospects/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Un contact devient un dossier préparé. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/tri-assistance-clients/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Chaque message trouve le bon interlocuteur. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/preparer-arrivee-collaborateur/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "L’arrivée se prépare dans le bon ordre. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/alerte-reapprovisionnement-stock/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Le stock vous prévient avant la rupture. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/demande-avis-apres-intervention/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Après l’intervention, demander un vrai retour. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/planning-contenus-validation/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Le planning avance. Vous choisissez ce qui sort. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/rapport-commercial-hebdomadaire/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "La semaine se lit dans un seul rapport. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/atelier/pieces-dossier-financement/",
+    "lang": "fr",
+    "key": "workshop",
+    "title": "Les pièces manquantes restent dans le suivi. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/histoires/claire-roussel/",
+    "lang": "fr",
+    "key": "story",
+    "title": "Claire Roussel · Agence immobilière · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/histoires/samir-benali/",
+    "lang": "fr",
+    "key": "story",
+    "title": "Samir Benali · Maintenance électrique · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/histoires/marc-delmas/",
+    "lang": "fr",
+    "key": "story",
+    "title": "Marc Delmas · Menuiserie · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/histoires/sarah-morel/",
+    "lang": "fr",
+    "key": "story",
+    "title": "Sarah Morel · Restauration · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/histoires/luca-ferri/",
+    "lang": "fr",
+    "key": "story",
+    "title": "Luca Ferri · Hôtellerie · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/methode/",
+    "lang": "fr",
+    "key": "method",
+    "title": "Audit, réalisation et suivi de votre projet · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/a-propos/",
+    "lang": "fr",
+    "key": "about",
+    "title": "Pourquoi Ostenvia existe · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/contact/",
+    "lang": "fr",
+    "key": "contact",
+    "title": "Racontez-nous ce qui vous occupe. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/audit/",
+    "lang": "fr",
+    "key": "audit",
+    "title": "Réserver un échange gratuit de 20 minutes · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/cookies/",
+    "lang": "fr",
+    "key": "cookies",
+    "title": "Cookies et agenda · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/conditions-utilisation/",
+    "lang": "fr",
+    "key": "terms",
+    "title": "Conditions d’utilisation · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/mentions-legales/",
+    "lang": "fr",
+    "key": "legal",
+    "title": "Mentions légales · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/confidentialite/",
+    "lang": "fr",
+    "key": "privacy",
+    "title": "Confidentialité · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/",
+    "lang": "it",
+    "key": "home",
+    "title": "Ostenvia · Automazione IA e finanziamenti per PMI",
+    "noindex": false
+  },
+  {
+    "path": "/it/automazione-ia/",
+    "lang": "it",
+    "key": "automation",
+    "title": "Automazione IA su misura per piccole imprese e PMI · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/finanziamenti/",
+    "lang": "it",
+    "key": "funding",
+    "title": "Finanziamenti per PMI: opportunità e pratiche · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Dimostrazioni di automazione IA · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/fatture-fornitori/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Fatture pronte da verificare. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/pianificazione-interventi/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Un intervento trova il suo orario. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/preventivo-dopo-chiamata/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Dalla chiamata al preventivo. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/monitoraggio-documenti-scadenze/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Le scadenze escono dai documenti. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/arricchimento-schede-contatti/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Un contatto diventa una scheda pronta. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/smistamento-assistenza-clienti/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Ogni messaggio trova il referente giusto. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/preparare-arrivo-collaboratore/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "L’arrivo si prepara nell’ordine giusto. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/avviso-riassortimento-scorte/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Le scorte segnalano cosa riordinare. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/richiesta-recensione-dopo-intervento/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Dopo l’intervento, chiedere un riscontro vero. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/piano-contenuti-approvazione/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "Il piano procede. Scegliete voi cosa esce. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/report-commerciale-settimanale/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "La settimana si legge in un solo report. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/atelier/documenti-pratica-finanziamento/",
+    "lang": "it",
+    "key": "workshop",
+    "title": "I documenti mancanti restano sotto controllo. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/storie/claire-roussel/",
+    "lang": "it",
+    "key": "story",
+    "title": "Claire Roussel · Agenzia immobiliare · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/it/storie/samir-benali/",
+    "lang": "it",
+    "key": "story",
+    "title": "Samir Benali · Manutenzione elettrica · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/it/storie/marc-delmas/",
+    "lang": "it",
+    "key": "story",
+    "title": "Marc Delmas · Falegnameria · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/it/storie/sarah-morel/",
+    "lang": "it",
+    "key": "story",
+    "title": "Sarah Morel · Ristorazione · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/it/storie/luca-ferri/",
+    "lang": "it",
+    "key": "story",
+    "title": "Luca Ferri · Ospitalità · Ostenvia",
+    "noindex": true
+  },
+  {
+    "path": "/it/metodo/",
+    "lang": "it",
+    "key": "method",
+    "title": "Analisi, realizzazione e seguito del progetto · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/chi-siamo/",
+    "lang": "it",
+    "key": "about",
+    "title": "Perché esiste Ostenvia · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/contatti/",
+    "lang": "it",
+    "key": "contact",
+    "title": "Raccontateci cosa vi impegna. · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/primo-incontro/",
+    "lang": "it",
+    "key": "audit",
+    "title": "Prenota un incontro gratuito di 20 minuti · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/cookie/",
+    "lang": "it",
+    "key": "cookies",
+    "title": "Cookie e agenda · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/condizioni-utilizzo/",
+    "lang": "it",
+    "key": "terms",
+    "title": "Condizioni di utilizzo · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/note-legali/",
+    "lang": "it",
+    "key": "legal",
+    "title": "Note legali · Ostenvia",
+    "noindex": false
+  },
+  {
+    "path": "/it/privacy/",
+    "lang": "it",
+    "key": "privacy",
+    "title": "Privacy · Ostenvia",
+    "noindex": false
+  }
+]

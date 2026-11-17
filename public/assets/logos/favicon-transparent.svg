@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <style>.ring{fill:#165f47}@media(prefers-color-scheme:dark){.ring{fill:#e5efcf}}</style>
+  <path class="ring" fill-rule="evenodd" d="M26 17a22 22 0 1 0 0 44 22 22 0 0 0 0-44Zm0 8.5a13.5 13.5 0 1 1 0 27 13.5 13.5 0 0 1 0-27Z"/>
+  <path fill="#a7ca61" d="M35 23C32 11 45 9 60 3 58 13 49 17 40 21Z"/>
+  <path fill="#82ad45" d="M38 26C45 20 53 17 60 3 61 18 53 26 38 26Z"/>
+</svg>

@@ -1,0 +1,79 @@
+{
+  "source": "work/ostenvia-review/index.html",
+  "approvalSource": "work/ostenvia-review/approvals.json",
+  "viewBox": "0 0 1125 185",
+  "modules": [
+    {
+      "id": "reception",
+      "label": "Réception",
+      "labelIt": "Ricezione",
+      "operation": "intake",
+      "groupId": "module-reception",
+      "transform": "translate(5 9)",
+      "motionHooks": []
+    },
+    {
+      "id": "analyse",
+      "label": "Analyse",
+      "labelIt": "Analisi",
+      "operation": "analysis",
+      "groupId": "module-analyse",
+      "transform": "translate(229 9)",
+      "motionHooks": []
+    },
+    {
+      "id": "transformation",
+      "label": "Transformation",
+      "labelIt": "Trasformazione",
+      "operation": "transform",
+      "groupId": "module-transformation",
+      "transform": "translate(453 9)",
+      "motionHooks": [
+        "raw",
+        "structured"
+      ]
+    },
+    {
+      "id": "redirection",
+      "label": "Redirection",
+      "labelIt": "Instradamento",
+      "operation": "route",
+      "groupId": "module-redirection",
+      "transform": "translate(677 9)",
+      "motionHooks": [
+        "routed"
+      ]
+    },
+    {
+      "id": "livraison",
+      "label": "Livraison",
+      "labelIt": "Consegna",
+      "operation": "delivery",
+      "groupId": "module-livraison",
+      "transform": "translate(901 9)",
+      "motionHooks": []
+    }
+  ],
+  "motion": {
+    "durationMs": 4200,
+    "iterations": 1,
+    "triggers": [
+      "initial display",
+      "pointer enter",
+      "keyboard focus"
+    ],
+    "source": "work/ostenvia-review/review.js: playFactorySpecimens",
+    "reducedMotion": "Skip animation; raw opacity 0, structured opacity 1, routed translate(65px,-33px).",
+    "note": "The standalone SVG preserves hooks but has no embedded script. Inline it before animating its groups."
+  },
+  "portrait": {
+    "file": "artisan-illustratif-v2.png",
+    "fictional": true,
+    "usage": "Illustrative professional portrait; never attribute a real client testimonial to this person.",
+    "prompts": "portrait-prompts.json"
+  },
+  "embeddedAssets": {
+    "mascotImages": 5,
+    "font": "Manrope 600"
+  }
+}

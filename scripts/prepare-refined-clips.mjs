@@ -1,0 +1,9 @@
+import {fileURLToPath} from 'node:url';
+import fs from 'node:fs/promises';
+const dir=fileURLToPath(new URL('../media-jobs/',import.meta.url));
+for(const id of ['funding','quotes']){
+ const status=JSON.parse(await fs.readFile(dir+id+'-status.json','utf8'));if(status.data.state!=='success')throw Error('Missing still');
+ const image=status.data.response.resultUrls[0];
+ const prompt=`Animate the exact provided Ostenvia miniature as a restrained premium six-second isometric motion-design shot. The reference image is a locked physical set. KEEP EVERY MACHINE HOUSING, CHARACTER, SURFACE, TRAY, RAIL AND PROP IN EXACTLY THE SAME POSITION AND SHAPE THROUGHOUT. Locked camera. Only small purposeful movements of EXISTING parts: one Ostie blinks and gently moves one arm onto its existing control, an existing roller turns briefly, and the existing inspection light travels a few centimetres across the existing paper. The other Ostie calmly looks at the same paper. No character walks across machinery. Do not transport large objects across the whole scene. By second 4.8 all actions settle, then hold the clean final composition. Preserve the exact organic Ostie face and body. All surfaces stay blank and unlettered. ZERO TEXT, ZERO LETTERS, ZERO NEW LABELS OR LOGOS, ZERO NEW OBJECTS, ZERO NEW MACHINES, NO GEOMETRY MORPHING, NO CAMERA MOVEMENT, NO GLOWING OUTPUT TRAYS, NO FLOATING UI, NO SPEECH. The task is ${id==='funding'?'checking a prepared funding dossier, never awarding money':'checking a prepared quote before approval'}. Prioritize exact scene fidelity and charming subtle physical movement over action complexity.`;
+ await fs.writeFile(dir+id+'-r2-motion-request.json',JSON.stringify({model:'veo-3-1',input:{model:'veo3_lite',prompt,image_urls:[image],generation_type:'FIRST_AND_LAST_FRAMES_2_VIDEO',aspect_ratio:'16:9',resolution:'1080p',duration:6}},null,2));
+}

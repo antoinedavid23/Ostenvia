@@ -1,0 +1,23 @@
+import {fileURLToPath} from 'node:url';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const root=fileURLToPath(new URL('../',import.meta.url)),jobs=path.join(root,'media-jobs');
+const direction=JSON.parse(await fs.readFile(path.join(jobs,'art-direction.json'),'utf8'));
+const ref=JSON.parse(await fs.readFile(path.join(jobs,'ostie-upload.json'),'utf8')).data.downloadUrl;
+const first=JSON.parse(await fs.readFile(path.join(jobs,'invoices-status.json'),'utf8')).data.response.resultUrls[0];
+const common=direction.jobs[0].image.prompt;
+const additions=[
+ ['onboarding','Build a complete employee administrative onboarding workshop: welcome folder intake, optical identity-free document checklist scanner, four separate storage pigeonholes, a detailed hinged completeness inspection machine, an Ostie approval desk, and a tidy prepared welcome pack at the output. No employee ranking, hiring decisions or personal identity data.'],
+ ['reviews','Build a charming post-service follow-up workshop: completed work-order intake, a small mechanical delivery-confirmation station, a timing wheel with unlettered marks, an Ostie checking a single polite review-request envelope, and a dispatch chute. No stars, ratings or fabricated reviews. The useful output is an invitation envelope only.'],
+ ['social','Build a sophisticated social-content preparation studio in miniature: three resource trays, a detailed articulated capture arm, an editorial assembly desk with unlettered photo contact sheets, a three-slot scheduling cabinet, and an Ostie reviewing a single proposed visual before placing it on an approval rack. No social-media logos, text, made-up engagement figures or human faces.'],
+ ['reporting','Build a miniature sales-reporting observatory: three separate input data-card spools, a glass data-sorting machine with visible rollers, a precise mechanical aggregation cylinder, an Ostie inspection desk, and an output podium holding one clean unlettered chart panel with three plain vertical bars. Believable metal mechanisms and physical connections. No money, letters, numbers or promises of growth.']
+];
+const all=[...direction.jobs,...additions.map(([id,purpose])=>({id,image:{prompt:purpose+'\n\n'+common.replace(/Purpose:[^\n]*/,'Purpose: '+id)},video:{prompt:'Animate this exact miniature '+id+' system. One finite task enters, passes through the detailed physical machinery and reaches a distinct completed output. Two or three Osties operate controls and check the result with small natural arm/head movements. Keep the camera locked and every machine and character unchanged. Rollers turn, the inspection bar scans, status lights change, the output item settles. No cuts, morphing, floating cards, text, invented objects or returning items. One calm six-second shot; the last second holds the completed state.'}}))];
+for(const j of all){
+ if(j.id!=='invoices')await fs.writeFile(path.join(jobs,j.id+'-request.json'),JSON.stringify({model:'gpt-image-2-image-to-image',input:{prompt:j.image.prompt+'\nReference image 2 is a previously approved Ostenvia workshop. Match its exceptional physical detail, materials, character fidelity and studio lighting, while designing the DIFFERENT functional machinery described above. Do not copy its exact machine arrangement.',input_urls:[ref,first],aspect_ratio:'16:9',resolution:'2K'}},null,2));
+ const motion=j.video.prompt.replaceAll('five seconds','six seconds').replaceAll('4.1–5.0','4.8–6.0').replaceAll('0.9 seconds','1.2 seconds')+'\nRender exactly 6 seconds. Complete the one-way movement by 4.8 seconds, then hold to 6 seconds. Keep charming organic Osties, never mechanical robot movement. All machine parts remain solid and physically connected. No sound, no speech. The matched still is the exact first frame.';
+ await fs.writeFile(path.join(jobs,j.id+'-motion-template.json'),JSON.stringify({model:'veo-3-1',input:{model:'veo3_fast',prompt:motion,image_urls:[],generation_type:'FIRST_AND_LAST_FRAMES_2_VIDEO',aspect_ratio:'16:9',resolution:'1080p',duration:6}},null,2));
+}
+const motion=JSON.parse(await fs.readFile(path.join(jobs,'invoices-motion-template.json'),'utf8'));motion.input.image_urls=[first];await fs.writeFile(path.join(jobs,'invoices-motion-request.json'),JSON.stringify(motion,null,2));
+await fs.writeFile(path.join(jobs,'production-plan.json'),JSON.stringify({currency:'USD',paidTopUp:5,availableCreditsAtStart:1000,hardMaximumCredits:1000,reserved:{remainingImages:110,twelveVideos:780,portraitAnimation:35,contingency:75},ids:all.map(x=>x.id)},null,2));
+console.log('12 media briefs prepared. Batch ceiling: 1,000 credits.');

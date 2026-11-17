@@ -1,0 +1,14 @@
+{
+  "name": "ostenvia",
+  "compatibility_date": "2026-11-10",
+  "assets": {
+    "directory": "dist",
+    "not_found_handling": "404-page",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "observability": {
+    "enabled": false
+  },
+  "main": "src/site-worker.mjs"
+}

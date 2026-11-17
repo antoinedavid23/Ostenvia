@@ -1,0 +1,20 @@
+{
+  "name": "ostenvia-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test scripts/calculator.test.mjs scripts/privacy.test.mjs",
+    "build:factory": "node scripts/build-factory.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "three": "0.187.0",
+    "esbuild": "0.28.2"
+  }
+}

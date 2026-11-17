@@ -1,0 +1,35 @@
+{
+  "commit": "93243edc00b288a840fbb562a5e9f64177f2337f",
+  "assets": [
+    {
+      "asset": "outlook.svg",
+      "source": "https://raw.githubusercontent.com/n8n-io/n8n/93243edc00b288a840fbb562a5e9f64177f2337f/packages/nodes-base/nodes/Microsoft/Outlook/outlook.svg",
+      "bytes": 749
+    },
+    {
+      "asset": "teams.svg",
+      "source": "https://raw.githubusercontent.com/n8n-io/n8n/93243edc00b288a840fbb562a5e9f64177f2337f/packages/nodes-base/nodes/Microsoft/Teams/teams.svg",
+      "bytes": 1113
+    },
+    {
+      "asset": "excel.svg",
+      "source": "https://raw.githubusercontent.com/n8n-io/n8n/93243edc00b288a840fbb562a5e9f64177f2337f/packages/nodes-base/nodes/Microsoft/Excel/excel.svg",
+      "bytes": 1522
+    },
+    {
+      "asset": "notion.svg",
+      "source": "https://raw.githubusercontent.com/n8n-io/n8n/93243edc00b288a840fbb562a5e9f64177f2337f/packages/nodes-base/nodes/Notion/notion.svg",
+      "bytes": 1625
+    },
+    {
+      "asset": "postgres.svg",
+      "source": "https://raw.githubusercontent.com/n8n-io/n8n/93243edc00b288a840fbb562a5e9f64177f2337f/packages/nodes-base/nodes/Postgres/postgres.svg",
+      "bytes": 6066
+    },
+    {
+      "asset": "openrouter.svg",
+      "source": "https://raw.githubusercontent.com/n8n-io/n8n/93243edc00b288a840fbb562a5e9f64177f2337f/packages/@n8n/nodes-langchain/nodes/llms/LmChatOpenRouter/openrouter.svg",
+      "bytes": 868
+    }
+  ]
+}
